@@ -18,8 +18,8 @@ A simple pandoc filter that compiles and runs c++ code from markdown code block 
 
 ### Usage:
 * hide: remove the code block from the output
-* ignore: those not execute the code
-* global: those not execute the code. Adds it to a global file that is include to each subsequent code block.
+* ignore: dose not execute the code
+* global: dose not execute the code. Adds it to a global file that is include to each subsequent code block.
 
 
 ````markdown
