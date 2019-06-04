@@ -16,26 +16,26 @@ A simple pandoc filter that compiles and runs c++ code from markdown code block 
 * global: those not execute the code. Adds it to a global file that is include to each subsequent code block.
 
 
-```markdown
+````markdown
 This code will NOT be executed but added to the next block
-\`\`\`{.cpp global="ture"}
+```{.cpp global="ture"}
 
 #include <iostream>
 using namespace std;
 
-\`\`\`
+```
 
 This Code will be executed
-\`\`\`cpp
+```cpp
 int main()
 {
 	cout << "Hello World" << endl;
 }
-\`\`\`
+```
 **Result**: Hello World
 
 This code will be ignored and hiden from the output
-\`\`\`{.cpp hide="true" ignore="true"}
+```{.cpp hide="true" ignore="true"}
 #include <iostream>
 using namespace std;
 
@@ -43,5 +43,5 @@ int main()
 {
 	cout << "Ignored result" << endl;
 }
-\`\`\`
 ```
+````
