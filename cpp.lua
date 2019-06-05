@@ -33,7 +33,7 @@ local function has_value (tab, val)
    return false
 end
 
-wordcount = {	
+cppExec = {	
    CodeBlock = function(el)
       cppError = ""
       local out = ""
@@ -97,7 +97,7 @@ wordcount = {
 
 function Pandoc(el)
    local div = pandoc.Div(el.blocks)
-   local pan = pandoc.walk_block(div, wordcount).content
+   local pan = pandoc.walk_block(div, cppExec).content
    return pandoc.Pandoc(pan, el.meta)
 end
 	   
