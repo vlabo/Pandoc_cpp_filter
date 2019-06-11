@@ -88,7 +88,8 @@ cppExec = {
       end
 
       if out ~= "" then
-	 table.insert(result, pandoc.Para({pandoc.Strong("Result: "), pandoc.Str(out)})) 
+	 table.insert(result, pandoc.Para({pandoc.Strong("Output:  \n")})) 
+	 table.insert(result, pandoc.CodeBlock(out, pandoc.Attr('',{},{}))) 
       end
       
       return result
