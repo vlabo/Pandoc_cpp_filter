@@ -38,7 +38,8 @@ int main()
 	cout << "Hello World" << endl;
 }
 ```
-**Result**: Hello World
+**Output**: 
+```Hello World```
 
 This code will be ignored and hiden from the output
 ```{.cpp hide="true" ignore="true"}
